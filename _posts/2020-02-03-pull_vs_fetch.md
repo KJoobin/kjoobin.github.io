@@ -13,3 +13,6 @@ pull 과 fetch 둘다 다운로드 되는 특성이 있었다
 pull 의 경우 다운로드와 병합이 되는데 반해 fetch 는 merge 명령어를 한번더 사용해야했다.
 HEAD 란 현재 파일의 위치를 말하는데 pull 의 경우 명령어를 쓰면 merge 가 되므로 HEAD 의 위치도 가장앞인 merge된 브랜치 인 반면 fecth 는 merge 되기전 가장 선두에 위치하는 브랜치가 HEAD 가 된다.
 ![pull_vs_fetch](https://github.com/KJoobin/kjoobin.github.io/blob/master/assets/images/pull_vs_fetch.png?raw=true)
+
+- fetch 후 merge 하면 pull 과 같다.
+- fetch 는 좀더 신중하게 merge 가 필요할경우 사용
