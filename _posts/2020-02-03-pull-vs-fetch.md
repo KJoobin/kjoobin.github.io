@@ -1,9 +1,9 @@
----
-title: "[TID]pull vs fetch"
-date: 2020-02-03 20:52:00
-categories:TID pull fetch
----
 
+---
+title: "TID pull vs fetch"
+date: 2020-02-03 20:52:00 -0400
+categories: TID pull fetch
+---
 remote 를 이용해서 협업을 배우던중 fetch 와 pull 의 차이에대해서 궁금증이 생겼다.
 
 공통점: 새로운 파일에 대한 다운로드가 진행된다.
