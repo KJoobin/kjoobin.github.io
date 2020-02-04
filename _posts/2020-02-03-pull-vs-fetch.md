@@ -1,4 +1,3 @@
-
 ---
 title: "TID pull vs fetch"
 date: 2020-02-03 20:52:00 -0400
