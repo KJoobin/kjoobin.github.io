@@ -1,6 +1,6 @@
 ---
-title: "[TID] 협업을 위한 툴
-date: 2020-02-04 22:35:00
+title: "[TID] 협업을 위한 툴"
+date: 2020-02-04 22:35:00 -0400
 categories: TID collaborate tool jest eslint
 ---
 사람들과 협업을 하다보면 코드 가독성, 디버그, 등등 많은 불편함에 마주한다. 그러한 불편함을 줄여주기 위한 tool 이 있어 소개를 한다.
