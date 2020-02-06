@@ -16,9 +16,8 @@ underflow : 큐가 비어 있어 자료를 꺼낼 수 없는 경우
 
 ---
 
-Array.push(value) : Array 에 value 를 가장 마지막 index + 1 에 추가한다.  
-Array.shift() : Array 의 0번째 index 를 pop() 한 후 나머지 index 를 -1 해 준다.  
-Array.length() : Array 의 길이 ( index 의 갯수 ) 를 반환합니다.  
+Enqueue : 데이터를 입력  
+Dequeue : 데이터를 출력  
 
 ![queue](https://github.com/KJoobin/kjoobin.github.io/blob/master/assets/images/Queue.jpeg?raw=true)
 
@@ -27,11 +26,11 @@ Array.length() : Array 의 길이 ( index 의 갯수 ) 를 반환합니다.
   추가한다면
     overflow인가?
       yes -> overflow 출력
-      no -> 저장된값.push(추가할 값);
+      no -> Enqueue
   뺀다면
     underflow 인가?
     yes ->  underflow 출력
-    no -> 저장된값.shift();
+    no -> Dequeue
 ```
 
 
@@ -47,7 +46,8 @@ bottom: top 과 반대되는, 저장된 데이터에서 가장 처음 들어온 
 
 ---
 
-Array.pop() : 저장된 배열에서의 마지막 index 값을 뺀다.  
+push : 데이터를 입력  
+pop : 데이터를 출력  
 ![stack](https://github.com/KJoobin/kjoobin.github.io/blob/master/assets/images/Stack.jpeg?raw=true) 
 
 
@@ -56,10 +56,10 @@ Array.pop() : 저장된 배열에서의 마지막 index 값을 뺀다.
   추가한다면
     overflow인가?
       yes -> overflow 출력
-      no -> 저장된값.push(추가할 값);
+      no -> push
   뺀다면
     underflow 인가?
     yes ->  underflow 출력
-    no -> 저장된값.pop();
+    no -> pop
 
 ```
