@@ -1,7 +1,7 @@
 ---
-title: "[TID] Linked list, Hash table"
+title: "[TID] Linked list"
 date: 2020-02-07 13:12:30
-categories: TID, Data structure, Linked list, Hash table
+categories: TID, Data structure, Linked list
 ---
 
 ## Linked list  
@@ -44,3 +44,28 @@ property | 설명 | method | 설명 |
 ---
 
 ![liinkedList_property](https://github.com/KJoobin/kjoobin.github.io/blob/master/assets/images/liinkedList_property.png?raw=true_)
+
+```
+- 추가하기 ( 데이터 )
+  tail 을 이용해 추가하고 싶은 값의 주소값을 마지막 노드의 다음 데이터 주소값( 포인터 ) 에 넣는다.
+  tail 을 추가한 데이터의 노드의 주소값으로 변경한다.
+  
+- 삽입하기 ( 삽입할 위치의 데이터, 삽입할 데이터 )
+  current 를 head 로 설정,
+  next 를 이용해 삽입할 위치의 데이터와 current 노드의 데이터값이 같은지 비교,
+    다르면 
+      before <- current
+      current <-- current.next
+      데이터를 다음으로 바꾼고, 반복
+    같다면
+      before.next 를 삽입할 데이터의 주소값으로 변경,
+      삽입할 데이터.next 를 current 주소값으로 변경
+
+- 삭제하기 ( 삭제할 데이터 ) 
+  currnet 를 head 로 설정
+  next 를 이용해 삭제할 위치의 데이터와 currnet 노드의 데이터값이 같은지 비교,
+  다르면
+    반복..
+   같으면
+    before.next 를 current.next 값으로 변경
+```
