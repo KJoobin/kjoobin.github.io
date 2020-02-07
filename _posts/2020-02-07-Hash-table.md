@@ -10,18 +10,18 @@ categories: TID HashTable LinkedList
 ## Hash table  
 Hash table 은 데이터를 규칙에 따라 정리한것 이다.  
 ---
-| property | 의미 |
-| --- | --- |
-| key | 원래 데이터의 값 |
-| hash value | 데이터를 hashing 한 값 |
-| buckets | hashing 한 데이터를 저장하는 곳 |
-| Hash function | key 를 어떠한 규칙에 의해서 매핑하는 함수 |
+| property | 의미 |  
+| --- | --- |  
+| key | 원래 데이터의 값 |  
+| hash value | 데이터를 hashing 한 값 |  
+| buckets | hashing 한 데이터를 저장하는 곳 |  
+| Hash function | key 를 어떠한 규칙에 의해서 매핑하는 함수 |  
 
-| method |
-| --- |
-| 삽입 |
-| 탐색 |
-| 삭제 |
+| method |  
+| --- |  
+| 삽입 |  
+| 탐색 |  
+| 삭제 |  
 ---
 
 ### 왜?  
@@ -35,7 +35,7 @@ john 의 전화번호를 알고 싶다면 Jonh 을 hashing 해서 얻은값 02(h
 
 ### Collision  
 hashing 을 하다보면 다른 데이터가 같은 hash value 를 갖는 Collision 이 생기는데   
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Hash_table_5_0_1_1_1_1_1_LL.svg/900px-Hash_table_5_0_1_1_1_1_1_LL.svg.png" width="70%" height="70%" ></img>   
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Hash_table_5_0_1_1_1_1_1_LL.svg/900px-Hash_table_5_0_1_1_1_1_1_LL.svg.png" width="70%" height="70%" />
 *john 과 sandra 가 hashing value 가 같아 생기는 Collision*
 
 1. Separate chaining   
@@ -44,4 +44,4 @@ hashing 을 하다보면 다른 데이터가 같은 hash value 를 갖는 Collis
 - 더 많은 메모리를 사용하게 된다.   
 2. Open addressing linear probing   
 -    
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Hash_table_5_0_1_1_1_1_0_SP.svg/760px-Hash_table_5_0_1_1_1_1_0_SP.svg.png" width="70%" height="70%" ></img>   
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Hash_table_5_0_1_1_1_1_0_SP.svg/760px-Hash_table_5_0_1_1_1_1_0_SP.svg.png" width="70%" height="70%" />
