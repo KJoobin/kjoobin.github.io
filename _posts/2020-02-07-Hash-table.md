@@ -45,6 +45,8 @@ hashing 을 하다보면 다른 데이터가 같은 hash value 를 갖는 Collis
 - hashing 을 하다가 중복되는 값이 나오면 그 밑에 빈자리에 값을 둔다.
 - 하지만 삭제를 할 경우 문제가 생긴다. 그럴때를 대비하여 삭제한곳에 빈 더미 값을 둔다.
 ```
-아래 그림과 같은 상황에서 John 의 데이터 값을 지우면 Sandra 의 값을 찾을때 152 번을 찾게되어 없는 데이터로 나온다, 그 상황을 방지하기 위하여 John 을 지우더라도 dummy 값을 납둔다.
+아래 그림과 같은 상황에서 John 의 데이터 값을 지우면 
+Sandra 의 값을 찾을때 152 번을 찾게되어 없는 데이터로 나온다,
+그 상황을 방지하기 위하여 John 을 지우더라도 dummy 값을 납둔다.
 ```
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Hash_table_5_0_1_1_1_1_0_SP.svg/760px-Hash_table_5_0_1_1_1_1_0_SP.svg.png" style= " width:70%, height:70%, background-color:white " />  
