@@ -33,8 +33,9 @@ constructor 만 new 키워드를 사용하여 instance 를 만들수 있다.
 avante.__proto__.constructor  //Car
 avante.__proto__.__proto__.constructor  //Object
 ```
-## __proto__   
-__proto__ 는 prototype 에 접근을 가능하게 하는 method 이다. 사용법은 위의 코드에 나와있으므로 생략을 하겠다.   
+## \_\_proto\_\_   
+\_\_proto\_\_ 는 prototype 에 접근을 가능하게 하는 method 이다. 사용법은 위의 코드에 나와있으므로 생략을 하겠다.   
+모든 값은 \_\_proto\_\_ 값을 가지고 있지만, 생성자만이 prototype 값을 가질수 있다.
 
 ## Object.create   
 Object.create 는 prototype 을 deep copy 하여 다른 constructor 에 할당해주는 method 로써 
