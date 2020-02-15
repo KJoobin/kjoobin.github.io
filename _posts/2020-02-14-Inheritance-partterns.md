@@ -34,8 +34,12 @@ avante.__proto__.constructor  //Car
 avante.__proto__.__proto__.constructor  //Object
 ```
 ## \_\_proto\_\_   
-\_\_proto\_\_ 는 prototype 에 접근을 가능하게 하는 method 이다. 사용법은 위의 코드에 나와있으므로 생략을 하겠다.   
+\_\_proto\_\_ 는 constructor 의 prototype 에 접근을 가능하게 하는 method 이다. 사용법은 위의 코드에 나와있으므로 생략을 하겠다.   
 모든 값은 \_\_proto\_\_ 값을 가지고 있지만, 생성자만이 prototype 값을 가질수 있다.
+```js
+avante.__proto__ === avante.constructor.prototype;  //true
+Car.__proto__ === Car.constructor.prototype;
+```
 
 ## Object.create   
 Object.create 는 prototype 을 deep copy 하여 다른 constructor 에 할당해주는 method 로써 
@@ -59,7 +63,7 @@ var runner = new Humen('Kim');  // Kim runnig
                                 // Kim Eatting
 console.log(runner.stop());     // Kim Stop!!
 
-
+runner.__proto
 ```
 ## class   
 위의 OOP 를 쉽게 하기 위해 ES6 에서 만들어진 문법으로, super, constructor, extends 를 이용하여 확장을 손쉽게 할수 있다.   
