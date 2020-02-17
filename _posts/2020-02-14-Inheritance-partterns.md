@@ -42,7 +42,33 @@ Car.__proto__ === Car.constructor.prototype;
 ```
 
 ## Object.create   
-Object.create 는 prototype 을 deep copy 하여 다른 constructor 에 할당해주는 method 로써 
+Object.create 는 prototype 을 deep copy 하여 다른 constructor 에 할당해주는 method 로써   
+create 를 사용하지 않았을떄의 문제점
+```js
+var Car = function(name) {
+  this.name = name;
+  console.log(`${this.name} is car`);
+}
+Car.prototype.stop = function() {
+  console.log(`${this.name} is stop`);
+}
+Car.prototype.go = function() {
+  console.log(`${this.name}  is go`);
+}
+
+var Humen = function(name) {
+  this.name = name;
+  console.log(`${this.name} is Humen`);
+}
+Humen.prototype = Car.prototype;
+Humen.prototype.stop = function(){
+  console.log(`${this.name} is never stop`);
+}
+
+var avante = new Car('avante');
+console.log(avante.stop())  // avante is never stop
+```
+과 같이 원본인  Car 의  형태값도 같이 바뀐다. 그걸 방지하기 위해 create 메소드를 사용하는데  
 ```js
 var Car = function(name) {
   this.name = name;
@@ -57,11 +83,14 @@ var Humen = function() {
 };
 Humen.prototype = Object.create(Car.prototype);   // Humen 의 prototype 을 Car 의 Prototype 의 값으로 할당; (Deep copy);
 
+Humen.prototype.stop = function() {
+  console.log(`${this.name} is never stop`);
+}
 var avante = new Car('avante'); // avante running
 console.log(avante.stop());     // avnate Stop!!
 var runner = new Humen('Kim');  // Kim runnig 
                                 // Kim Eatting
-console.log(runner.stop());     // Kim Stop!!
+console.log(runner.stop());     // Kim never stop!!
 
 runner.__proto
 ```
